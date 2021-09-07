@@ -2,6 +2,8 @@ package no.kristiania;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class RomanNumbersTest {
 
     private final RomanNumbers romanNumbers;
@@ -11,7 +13,7 @@ public class RomanNumbersTest {
     }
 
     @Test
-    public void test() {
-        Assertions.assertEquals(0,0);
+    void shouldConvert1ToI() {
+        assertEquals("I", romanNumbers.toRoman(1));
     }
 }
