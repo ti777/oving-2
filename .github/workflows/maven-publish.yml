@@ -36,4 +36,4 @@ jobs:
       if: ${{ always() }}
       uses: scacap/action-surefire-report@v1
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
